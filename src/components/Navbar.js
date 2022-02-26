@@ -2,15 +2,10 @@ import React from 'react'
 import {  Link } from 'gatsby'
 const Navbar = () =>{
 return (
-  <nav className="text-red-300 flex">
-    <div>
-      <h1>Cool log</h1>
-    </div>
-    <div className="links">
-      <Link to="/">Home</Link>
-      <Link to="/about">About Me</Link>
-      <Link to="/projects">Portfolios</Link>
-    </div>
+  <nav className="flex justify-center mx-4 border-b border-gray-300">
+      <Link className="py-2 mr-4" to="/">Home</Link>
+      <Link className="py-2 mr-4" to="/about">About</Link>
+      <Link className="py-2" to="/projects">Portfolios</Link>
   </nav>
 )
   }
