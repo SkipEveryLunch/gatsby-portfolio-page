@@ -1,9 +1,12 @@
 import React from 'react'
+import Layout from "../../components/Layout"
 const Projects = () =>{
 return (
-<div>
-  this is projects page
-</div>
-)
-  }
+  <Layout>
+    <div>
+      this is projects page
+    </div>
+  </Layout>
+  )
+}
 export default Projects
