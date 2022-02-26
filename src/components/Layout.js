@@ -1,17 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 const Layout = ({children}) =>{
 return (
-  <div>
+  <div className="h-screen flex flex-col">
+    <Navbar />
     <div>
-      <Navbar />
-      <div>
-        { children }
-      </div>
-      <footer>
-        <p>copyright by skipeverylunch</p>
-      </footer>
+      { children }
     </div>
+    <Footer />
   </div>
 )
   }
