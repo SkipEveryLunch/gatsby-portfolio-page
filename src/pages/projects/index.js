@@ -11,14 +11,15 @@ const Projects = ({data}) =>{
         <h2 className="text-4xl">Portfolios</h2>
         <h3 className="mt-2">今までに作ったWebアプリとWebサイトです。</h3>
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-5 mx-5 mb-10">
         {projects.map(project=>{
           const stacks = project.frontmatter.stack.split(",");
           return (
             <Link to={`/projects/${project.frontmatter.slug}`} 
             key={project.frontmatter.id}>
-                <div>
-                  <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt="Banner" />
+                <div className="p-3">
+                  <GatsbyImage className="rounded-sm"
+                  image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt="Banner" />
                   <div className="text-center mx-3">
                     <h3 className="text-lg">
                     {project.frontmatter.title}

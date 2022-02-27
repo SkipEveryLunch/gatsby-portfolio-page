@@ -21,10 +21,10 @@ const ProjectDetails = ({data}) =>{
           </div>
         </div>
         <div>
-          <GatsbyImage  image={featuredImg.childImageSharp.gatsbyImageData} alt="featured image" />
         </div>
         <div className="flex justify-center text-left">
           <div className="w-2/3">
+            <GatsbyImage className="my-10" image={featuredImg.childImageSharp.gatsbyImageData} alt="featured image" />
             <div className="markdown" dangerouslySetInnerHTML={{__html:html}} />
             <div className="mt-5 flex justify-start">
               <Link className="inline-block w-max px-2 py-1 rounded-full bg-gray-400 text-white hover:bg-gray-500" to="/projects">一覧に戻る</Link>
