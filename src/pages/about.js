@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from "../components/Layout"
-import { Link,graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image"
 const About = ({data}) =>{
   console.log(data)
 return (
   <Layout>
-    <div className="my-7 text-center">
+    <div className="text-center">
       <h2 className="text-4xl">About Me</h2>
       <h3 className="mt-2">このページを作ったのは誰かと言う話です。</h3>
     </div>

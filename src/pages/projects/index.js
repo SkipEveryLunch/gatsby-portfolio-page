@@ -7,7 +7,7 @@ const Projects = ({data}) =>{
   return (
     <Layout>
     <div className="flex flex-col">
-      <div className="my-7 text-center">
+      <div className="text-center">
         <h2 className="text-4xl">Portfolios</h2>
         <h3 className="mt-2">今までに作ったWebアプリとWebサイトです。</h3>
       </div>

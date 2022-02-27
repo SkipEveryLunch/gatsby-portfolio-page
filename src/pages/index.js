@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const Index = ({data}) =>{
 return (
   <Layout>
-    <section className="flex h-full px-7">
+    <section className="flex h-full">
       <div className="flex-1 flex flex-col justify-center">
         <div className="text-4xl">
           <div className="mb-5">
