@@ -6,22 +6,34 @@ const Projects = ({data}) =>{
   const projects = data.allMarkdownRemark.nodes;
   return (
     <Layout>
-    <div>
-      <h2>ポートフォリオ</h2>
-      <h3>今までに作ったWebアプリとWebサイトです。</h3>
-      <div>
-        {projects.map(project=>(
+    <div className="flex flex-col">
+      <div className="my-7 text-center">
+        <h2 className="text-4xl">Portfolios</h2>
+        <h3 className="mt-2">今までに作ったWebアプリとWebサイトです。</h3>
+      </div>
+      <div className="grid grid-cols-3 gap-3">
+        {projects.map(project=>{
+          const stacks = project.frontmatter.stack.split(",");
+          return (
             <Link to={`/projects/${project.frontmatter.slug}`} 
             key={project.frontmatter.id}>
                 <div>
                   <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt="Banner" />
-                  <h3>
-                  {project.frontmatter.title}
-                  </h3>
-                  <p>{project.frontmatter.stack}</p>
+                  <div className="text-center mx-3">
+                    <h3 className="text-lg">
+                    {project.frontmatter.title}
+                    </h3>
+                    <div>
+                      {stacks.map(s=>(
+                        <div className="inline-block text-xs bg-gray-400 py-0.5 px-1 mx-1 rounded-md text-white">{s}</div>
+                      ))}
+                    </div>
+                  </div>
+
                 </div>
             </Link>
           )
+        }
         )}
       </div>
     </div>

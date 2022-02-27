@@ -1,6 +1,6 @@
 ---
 title: ポートフォリオサイト（このサイト）
-stack: Gatsby.js, Tailwind.css, Netlify
+stack: Gatsby, Tailwind, Netlify
 slug: gatsby-portfolio-site
 date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/gps.png

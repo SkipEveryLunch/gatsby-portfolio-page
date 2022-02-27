@@ -1,6 +1,6 @@
 ---
 title: Learn with you
-stack: Vue.js,TypeScript,vue-testing-library,tailwind.css,laravel,Docker,Docker-compose,nginx,elastic beanstalk,RDS,Route53,github action
+stack: Vue,TypeScript,tailwind,laravel,Docker,Docker-compose,nginx,EB,RDS,Route53,github action
 slug: learn-with-you
 date: 2021-01-01T00:00:00+00:00
 url: learn-with-you.com
