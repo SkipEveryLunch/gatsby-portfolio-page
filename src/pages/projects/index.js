@@ -2,22 +2,22 @@ import React from 'react'
 import { graphql } from 'gatsby';
 import PortfolioCard from '../../components/PortfolioCard';
 import Layout from "../../components/Layout"
+import Heading from "../../components/Heading"
 const Projects = ({data}) =>{
   const projects = data.allMarkdownRemark.nodes;
   return (
     <Layout>
-    <div className="flex flex-col">
-      <div className="text-center">
-        <h2 className="text-4xl">Portfolios</h2>
-        <h3 className="mt-2">今までに作ったWebアプリとWebサイトです。</h3>
+      <div className="flex flex-col">
+        <Heading 
+        title="Portfolios" 
+        describe="今までに作ったWebアプリとWebサイトです。"/>
+        <div className="grid grid-cols-3 gap-5">
+          {projects.map(p=><PortfolioCard
+          project={p} />
+          )}
+        </div>
       </div>
-      <div className="grid grid-cols-3 gap-5 mx-5 mb-10">
-        {projects.map(p=><PortfolioCard
-        project={p} />
-        )}
-      </div>
-    </div>
-  </Layout>
+    </Layout>
   )
 }
 export default Projects

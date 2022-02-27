@@ -1,15 +1,13 @@
 import React from 'react'
 import Layout from "../components/Layout"
+import Heading from "../components/Heading"
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image"
 const About = ({data}) =>{
-  console.log(data)
 return (
   <Layout>
-    <div className="text-center">
-      <h2 className="text-4xl">About Me</h2>
-      <h3 className="mt-2">このページを作ったのは誰かと言う話です。</h3>
-    </div>
+    <div className="flex flex-col">
+    <Heading title="About Me" describe="このページを作ったのは誰かと言う話です。"/>
     <div className="flex justify-center text-sm leading-7">
       <div className="w-3/4 grid grid-cols-4">
         <div className="flex-1 flex flex-col justify-center">
@@ -32,6 +30,7 @@ return (
           </div>
         </div>
       </div>
+    </div>
     </div>
   </Layout>
 )
