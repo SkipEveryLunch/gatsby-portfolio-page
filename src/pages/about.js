@@ -9,28 +9,34 @@ return (
     <div className="flex flex-col">
     <Heading title="About Me" describe="このページを作ったのは誰かと言う話です。"/>
     <div className="flex justify-center text-sm leading-7">
-      <div className="w-3/4 grid grid-cols-4">
-        <div className="flex-1 flex flex-col justify-center">
-          <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="me"/>
-        </div>
-        <div className="col-span-3 flex flex-col justify-center">
+        <div className="w-1/2 text-center flex flex-col items-center">
+          <div style={{width:"20%"}}>
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="me"/>
+          </div>
           <div>
-            <p>
-              1986年福岡県出身、福岡県在住。
-            </p>
-            <p>
-              2014年より事務職として大手派遣会社に勤務する。だが壊滅的に事務の適性がない事が発覚し、「そんなミスある？」みたいなミスを連発する中で、VBAマクロに出会う。片っぱしから定型作業を自動化しつづけ、ついには社内ニートになることに成功する。
-            </p>
-            <p>
-              2019年、海外のオンラインスクールのプログラミングコースの価格の安さに度肝を抜かれ、Colt SteeleのPythonのコースを受講する。それ以来Andrei Neagoie、Stephen Grider、Jonas Schmedtmannなどの講座を受けまくる。
-            </p>
-            <p>
-              好きな言語はTypeScript。好きなフレームワークはNext.js。最近の推し講師はAntonio PapaとThe net ninja。
-            </p>
+            <h3 className="text-xl mt-8 mb-3">SkipEveryLunch</h3>
+            <div className="text-sm leading-7">
+              <p>1986年生。福岡県福岡市在住。</p>
+              <p>一般職のはずが、気付けば一日の半分はVBAを書いている。</p>
+              <p>好きな言語はTypeScript。</p>
+              <p>趣味は英会話、洋書、プログラミング学習。</p>
+              <p>ごく最近筋トレをはじめました。ラットプルダウン難しい。</p>
+            </div>
+            <h3 className="text-xl mt-8 mb-3">業務経験</h3>
+            <div className="text-sm leading-7">
+              <p>VBAによるExcel、Outlook作業の自動化、</p>
+              <p>ファイルの操作、およびInternet Explorerの操作。</p>
+              <p>これらを組み合わせて連携させる業務に、2020年より従事。他拠点からの要望も含めて、現在までに20個程度の業務自動化アプリケーションを作成。</p>
+            </div>
+            <h3 className="text-xl mt-8 mb-3">学習中の技術</h3>
+            <div className="text-sm leading-7">
+              <p>2019年よりWeb開発を学習中。</p>
+              <p>html、css、JavaScript、TypeScript、Node.js(express)、React.js、Vue.js、Ruby、Ruby on Rails、PHP、Laravel、Dockerなどのスキルを学習。</p>
+              <p>主な教材はUdemy。勉強もかねて可能な限り英語の講座を取っているが、よくインド英語のリスニングに苦しんでいる。好きな講師はThe net ninja。</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </Layout>
 )
