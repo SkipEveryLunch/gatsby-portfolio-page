@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from "../components/Layout"
 import { Link,graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image"
-import * as styles from '../styles/index.module.css'
 
 const Index = ({data}) =>{
 return (

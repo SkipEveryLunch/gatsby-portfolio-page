@@ -13,3 +13,12 @@
 html, body {
   min-height: 100%;
 }
+.markdown{
+  @apply leading-7;
+}
+.markdown ul {
+  @apply list-disc pl-5;
+}
+.markdown a {
+  @apply underline text-purple-700;
+}
