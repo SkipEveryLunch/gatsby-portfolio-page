@@ -22,3 +22,6 @@ html, body {
 .markdown a {
   @apply underline text-purple-700;
 }
+.portfolioDetail:hover picture{
+  @apply opacity-70;
+}

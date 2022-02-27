@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const PortfolioCard = ({project}) =>{
   const stacks = project.frontmatter.stack.split(",");
   return (
-    <Link className="p-3" 
+    <Link className="p-3 portfolioDetail" 
     to={`/projects/${project.frontmatter.slug}`} 
     key={project.frontmatter.id}>
       <GatsbyImage className="rounded-sm"
