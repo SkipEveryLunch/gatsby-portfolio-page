@@ -17,6 +17,7 @@
     "autoprefixer": "^10.4.2",
     "gatsby": "^4.8.0",
     "gatsby-plugin-image": "^2.8.1",
+    "gatsby-plugin-netlify": "^4.1.0",
     "gatsby-plugin-postcss": "^5.8.0",
     "gatsby-plugin-sharp": "^4.8.1",
     "gatsby-source-filesystem": "^4.8.1",
