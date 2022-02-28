@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/Layout"
 import Heading from "../components/Heading"
 import { Link } from "gatsby"
+import Button from "../components/Button"
 
 const encode = data => {
   return Object.keys(data)
@@ -88,17 +89,9 @@ const Contact = () => {
               />
             </div>
             <div className="mt-10 flex">
-              <button
-                className="py-1 rounded-sm border w-24 border-gray-700 hover:bg-gray-200"
-                type="submit"
-              >
-                投稿
-              </button>
-              <Link
-                className="inline-block w-24 py-1 ml-2 rounded-sm bg-gray-700 text-white text-center hover:bg-gray-600"
-                to="/"
-              >
-                戻る
+              <Button>投稿</Button>
+              <Link to="/">
+                <Button color="black">戻る</Button>
               </Link>
             </div>
           </form>
