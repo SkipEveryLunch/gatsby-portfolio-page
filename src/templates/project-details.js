@@ -24,7 +24,7 @@ const ProjectDetails = ({ data }) => {
             />
             <div className="mt-5 flex justify-start">
               {url !== "this" ? (
-                <a href={url}>
+                <a target="_blank" rel="noreferrer" href={url}>
                   <Button>見に行く</Button>
                 </a>
               ) : (
