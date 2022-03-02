@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
+import NavLink from "./NavLink"
+import { useLocation } from "@reach/router"
+const navs = [
+  { path: "/", name: "Home" },
+  { path: "/about", name: "About" },
+  { path: "/projects", name: "Portfolios" },
+  { path: "/contact", name: "Contact" },
+]
 const Navbar = () => {
+  const location = useLocation()
   return (
     <nav className="flex justify-center mx-4 border-b border-gray-300">
-      <Link className="py-2 px-3 hover:bg-gray-100" to="/">
-        Home
-      </Link>
-      <Link className="py-2 px-3 hover:bg-gray-100" to="/about">
-        About
-      </Link>
-      <Link className="py-2 px-3 hover:bg-gray-100" to="/projects">
-        Portfolios
-      </Link>
-      <Link className="py-2 px-2 hover:bg-gray-100" to="/contact">
-        Contact
-      </Link>
+      {navs.map(nav => {
+        return (
+          <NavLink
+            name={nav.name}
+            path={nav.path}
+            isActive={location.pathname === nav.path}
+          />
+        )
+      })}
     </nav>
   )
 }
