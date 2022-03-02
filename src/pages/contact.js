@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../components/Layout"
 import Heading from "../components/Heading"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Button from "../components/Button"
 
 const encode = data => {
@@ -26,8 +26,12 @@ const Contact = () => {
         ...state,
       }),
     })
-      .then(() => alert("success"))
+      .then(() => onSubmitSuccess())
       .catch(error => alert(error))
+  }
+  const onSubmitSuccess = () => {
+    alert("success")
+    navigate("/")
   }
   return (
     <Layout>
@@ -52,9 +56,10 @@ const Contact = () => {
               <input name="bot-field" onChange={handleChange} />
             </label>
             <div className="w-full flex flex-col mt-2">
-              <label>お名前：</label>
+              <label htmlFor="name">お名前：</label>
               <input
                 type="text"
+                id="name"
                 className="border border-gray-700 rounded-sm focus:outline-none px-1"
                 name="name"
                 onChange={handleChange}
@@ -63,9 +68,10 @@ const Contact = () => {
             </div>
 
             <div className="w-full flex flex-col mt-2">
-              <label>メールアドレス：</label>
+              <label htmlFor="email">メールアドレス：</label>
               <input
                 type="email"
+                id="email"
                 className="border border-gray-700 rounded-sm w-full focus:outline-none px-1"
                 label="メールアドレス"
                 variant="outlined"
@@ -76,9 +82,10 @@ const Contact = () => {
             </div>
 
             <div className="w-full flex flex-col mt-2">
-              <label>本文：</label>
+              <label htmlFor="message">本文：</label>
               <textarea
                 name="message"
+                id="message"
                 className="border border-gray-700 rounded-sm w-full focus:outline-none px-1"
                 label="本文"
                 multiline
