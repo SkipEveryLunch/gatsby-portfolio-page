@@ -11,9 +11,10 @@ const Navbar = () => {
   const location = useLocation()
   return (
     <nav className="flex justify-center mx-4 border-b border-gray-300">
-      {navs.map(nav => {
+      {navs.map((nav, idx) => {
         return (
           <NavLink
+            key={idx}
             name={nav.name}
             path={nav.path}
             isActive={location.pathname === nav.path}
