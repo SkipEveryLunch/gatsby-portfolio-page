@@ -10,7 +10,7 @@ const encode = data => {
 }
 
 const ContactForm = () => {
-  const { dispatch, state } = useContext(GlobalContext)
+  const { dispatch } = useContext(GlobalContext)
   const [formState, setFormState] = useState({})
   const handleChange = e => {
     setFormState({ ...formState, [e.target.name]: e.target.value })

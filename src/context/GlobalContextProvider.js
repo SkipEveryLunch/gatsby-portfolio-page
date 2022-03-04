@@ -1,17 +1,17 @@
 import React, { useReducer, createContext } from "react"
 export const GlobalContext = createContext()
 const initialState = {
-  modal: "",
+  modal: "んあ",
 }
 const reducer = (state, action) => {
   switch (action.type) {
     case "SET_MODAL":
-      console.log(action.payload)
       return {
         ...state,
         modal: action.payload,
       }
     case "DISCARD_MODAL":
+      console.log("discarded")
       return {
         ...state,
         modal: "",
