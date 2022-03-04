@@ -1,7 +1,7 @@
 import React, { useReducer, createContext } from "react"
 export const GlobalContext = createContext()
 const initialState = {
-  modal: "んあ",
+  modal: "",
 }
 const reducer = (state, action) => {
   switch (action.type) {
