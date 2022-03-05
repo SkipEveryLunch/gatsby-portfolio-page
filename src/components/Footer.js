@@ -1,8 +1,14 @@
 import React from "react"
+import DarkModeButton from "./DarkModeButton"
 const Footer = () => {
   return (
-    <footer className="text-sm mt-auto mb-2 mr-2 text-right">
-      <p>Copyright © 2022 SkipEveryLunch</p>
+    <footer className="flex justify-end items-center mt-auto py-3 px-3">
+      <div className="mr-3">
+        <DarkModeButton />
+      </div>
+      <div>
+        <p className="text-sm">Copyright © 2022 SkipEveryLunch</p>
+      </div>
     </footer>
   )
 }

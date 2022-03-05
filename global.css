@@ -38,3 +38,22 @@ body {
 .portfolioDetail:hover picture {
   @apply opacity-70;
 }
+.darkModeButton {
+  @apply relative w-10 h-5 bg-gray-300 bg-no-repeat rounded-full shadow-sm appearance-none cursor-pointer focus:outline-none;
+  height: 0.8rem;
+}
+.darkModeButton::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 1px;
+  left: 1px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: left 150ms;
+}
+.darkModeButton:checked::before {
+  left: 29px;
+}
