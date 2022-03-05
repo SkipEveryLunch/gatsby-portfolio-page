@@ -4,8 +4,9 @@ import Heading from "../components/Heading"
 import Button from "../components/Button"
 import SectionWrapper from "../components/SectionWrapper"
 import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-const About = ({ data }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
+const About = () => {
   return (
     <Layout>
       <SectionWrapper>
@@ -15,14 +16,16 @@ const About = ({ data }) => {
         />
         <div className="flex justify-center text-sm leading-7">
           <div className="text-center flex flex-col items-center">
-            <div style={{ width: "20%" }}>
-              <GatsbyImage
-                image={data.file.childImageSharp.gatsbyImageData}
-                alt="me"
-              />
+            <div className="p-2 h-12 w-12 rounded-full bg-gray-400 flex justify-center items-center">
+              <div>
+                <FontAwesomeIcon
+                  className="text-gray-100 fa-2xl"
+                  icon={faUser}
+                />
+              </div>
             </div>
             <div>
-              <h3 className="text-xl mt-8 mb-3">SkipEveryLunch</h3>
+              <h3 className="text-xl mt-3 mb-3">SkipEveryLunch</h3>
               <div className="text-sm leading-7">
                 <p>1986年生。福岡県福岡市在住。</p>
                 <p>一般職のはずが、気付けば一日の半分はVBAを書いている。</p>
