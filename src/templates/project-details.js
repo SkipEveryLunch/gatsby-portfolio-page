@@ -4,15 +4,16 @@ import { graphql, Link } from "gatsby"
 import HeadingForDetail from "../components/HeadingForDetail"
 import Button from "../components/Button"
 import Layout from "../components/Layout"
+import SectionWrapper from "../components/SectionWrapper"
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
   const { title, stack, url, featuredImg } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <div className="flex flex-col">
+      <SectionWrapper>
         <HeadingForDetail title={title} stack={stack} />
         <div className="flex justify-center text-left">
-          <div className="w-2/3">
+          <div>
             <GatsbyImage
               className="my-10"
               image={featuredImg.childImageSharp.gatsbyImageData}
@@ -36,7 +37,7 @@ const ProjectDetails = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionWrapper>
     </Layout>
   )
 }

@@ -2,18 +2,19 @@ import React from "react"
 import Layout from "../components/Layout"
 import Heading from "../components/Heading"
 import Button from "../components/Button"
+import SectionWrapper from "../components/SectionWrapper"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 const About = ({ data }) => {
   return (
     <Layout>
-      <div className="flex flex-col">
+      <SectionWrapper>
         <Heading
           title="About Me"
           describe="このページを作ったのは誰かと言う話です。"
         />
         <div className="flex justify-center text-sm leading-7">
-          <div className="w-1/2 text-center flex flex-col items-center">
+          <div className="text-center flex flex-col items-center">
             <div style={{ width: "20%" }}>
               <GatsbyImage
                 image={data.file.childImageSharp.gatsbyImageData}
@@ -70,7 +71,7 @@ const About = ({ data }) => {
             <Button>Qiita</Button>
           </a>
         </div>
-      </div>
+      </SectionWrapper>
     </Layout>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react"
 import { Link, navigate } from "gatsby"
 import Button from "./Button"
 import { GlobalContext } from "../context/GlobalContextProvider"
+import SectionWrapper from "../components/SectionWrapper"
 
 const encode = data => {
   return Object.keys(data)
@@ -35,7 +36,7 @@ const ContactForm = () => {
   }
   return (
     <form
-      className="w-1/2 text-left flex flex-col items-center"
+      className="w-full text-left flex flex-col items-center"
       name="contact"
       method="post"
       action="/thanks"

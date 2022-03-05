@@ -6,20 +6,23 @@ const PortfolioCard = ({ project }) => {
   const stacks = project.frontmatter.stack.split(",")
   return (
     <Link
-      className="p-3 portfolioDetail"
+      className="my-5 sm:my-0 portfolioDetail flex items-center sm:flex-col"
       to={`/projects/${project.frontmatter.slug}`}
       key={project.frontmatter.id}
     >
-      <GatsbyImage
-        className="rounded-sm"
-        image={getImage(
-          project.frontmatter.thumb.childImageSharp.gatsbyImageData
-        )}
-        alt="Banner"
-      />
-      <div className="text-center mx-3">
-        <h3 className="text-lg">{project.frontmatter.title}</h3>
-        <div>
+      <div className="w-1/2 sm:w-full">
+        <GatsbyImage
+          className="rounded-sm"
+          image={getImage(
+            project.frontmatter.thumb.childImageSharp.gatsbyImageData
+          )}
+          alt="Banner"
+        />
+      </div>
+
+      <div className="sm:text-center mx-5 w-1/2 sm:w-full">
+        <h3 className="text-xl sm:text-2xl">{project.frontmatter.title}</h3>
+        <div className="mt-2">
           {stacks.map(s => (
             <Tag>{s}</Tag>
           ))}

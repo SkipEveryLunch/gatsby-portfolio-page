@@ -25,7 +25,7 @@
 html,
 body {
   min-height: 100%;
-  @apply dark:bg-gray-700 dark:text-gray-100;
+  @apply dark:bg-gray-700 dark:text-gray-100 text-sm sm:text-base;
 }
 .markdown {
   @apply leading-7;
@@ -46,15 +46,21 @@ body {
 .darkModeButton::before {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 10px;
-  top: 1px;
-  left: 1px;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0.085rem;
+  left: 0.05rem;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: left 150ms;
 }
 .darkModeButton:checked::before {
-  left: 29px;
+  left: 1.7rem;
+}
+.text-very-large {
+  @apply text-2xl sm:text-3xl md:text-4xl;
+}
+.text-large {
+  @apply text-xl sm:text-2xl;
 }
