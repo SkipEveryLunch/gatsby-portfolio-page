@@ -65,7 +65,7 @@ const ContactForm = () => {
         <input
           type="email"
           id="email"
-          className="border border-gray-700 rounded-sm w-full focus:outline-none px-1"
+          className="border border-gray-700 rounded-sm w-full focus:outline-none px-1 dark:border-none"
           label="メールアドレス"
           variant="outlined"
           name="email"
@@ -74,12 +74,12 @@ const ContactForm = () => {
         />
       </div>
 
-      <div className="w-full flex flex-col mt-2">
+      <div className="w-full flex flex-col mt-2 dark:border-none">
         <label htmlFor="message">本文：</label>
         <textarea
           name="message"
           id="message"
-          className="border border-gray-700 rounded-sm w-full focus:outline-none px-1"
+          className="border border-gray-700 rounded-sm w-full focus:outline-none px-1 dark:border-none"
           label="本文"
           multiline
           rows={4}
@@ -90,7 +90,7 @@ const ContactForm = () => {
       </div>
       <div className="mt-10 flex">
         <Button>投稿</Button>
-        <Link to="/">
+        <Link className="ml-2" to="/">
           <Button color="black">戻る</Button>
         </Link>
       </div>

@@ -4,7 +4,13 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 const DarkModeButton = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const toggleIsDarkMode = () => {
-    isDarkMode ? setIsDarkMode(false) : setIsDarkMode(true)
+    if (isDarkMode) {
+      setIsDarkMode(false)
+      document.documentElement.classList.remove("dark")
+    } else {
+      setIsDarkMode(true)
+      document.documentElement.classList.add("dark")
+    }
   }
   return (
     <div className="flex items-center" onClick={toggleIsDarkMode}>

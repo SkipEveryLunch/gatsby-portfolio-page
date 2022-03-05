@@ -30,7 +30,7 @@ const ProjectDetails = ({ data }) => {
               ) : (
                 ""
               )}
-              <Link to="/projects">
+              <Link className="ml-2" to="/projects">
                 <Button color="black">戻る</Button>
               </Link>
             </div>

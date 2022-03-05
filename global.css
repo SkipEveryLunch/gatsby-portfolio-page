@@ -25,6 +25,7 @@
 html,
 body {
   min-height: 100%;
+  @apply dark:bg-gray-700 dark:text-gray-100;
 }
 .markdown {
   @apply leading-7;
@@ -33,7 +34,7 @@ body {
   @apply list-disc pl-5;
 }
 .markdown a {
-  @apply underline text-purple-700;
+  @apply underline text-purple-700 dark:text-purple-400;
 }
 .portfolioDetail:hover picture {
   @apply opacity-70;
