@@ -13,7 +13,7 @@ const DarkModeButton = () => {
     }
   }
   return (
-    <div className="flex items-center" onClick={toggleIsDarkMode}>
+    <div className="flex items-center">
       <div className="flex items-center">
         <FontAwesomeIcon
           className={`mr-1 ${isDarkMode ? "text-gray-300" : "text-blue-400"}`}
@@ -22,6 +22,7 @@ const DarkModeButton = () => {
       </div>
       <div className="flex items-center">
         <input
+          onClick={toggleIsDarkMode}
           className="darkModeButton"
           type="checkbox"
           role="switch"
