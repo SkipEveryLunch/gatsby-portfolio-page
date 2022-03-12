@@ -2,16 +2,22 @@ import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 const DarkModeButton = () => {
-  const [isDarkMode, setIsDarkMode] = useState(
-    document.documentElement.classList.contains("dark")
-  )
+  const isOnBrowser = typeof document !== undefined
+  const initialState = isOnBrowser
+    ? document.documentElement.classList.contains("dark")
+    : false
+  const [isDarkMode, setIsDarkMode] = useState(initialState)
   const toggleIsDarkMode = () => {
     if (isDarkMode) {
       setIsDarkMode(false)
-      document.documentElement.classList.remove("dark")
+      if (isOnBrowser) {
+        document.documentElement.classList.remove("dark")
+      }
     } else {
       setIsDarkMode(true)
-      document.documentElement.classList.add("dark")
+      if (isOnBrowser) {
+        document.documentElement.classList.add("dark")
+      }
     }
   }
   return (
