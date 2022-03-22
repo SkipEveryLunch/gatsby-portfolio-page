@@ -12,7 +12,7 @@ const Projects = ({ data }) => {
           title="Portfolios"
           describe="今までに作ったWebアプリとWebサイトです。"
         />
-        <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-5 md:gap-10 md:px-10 lg:grid-cols-3">
+        <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-5 md:gap-9 md:px-10 lg:grid-cols-3">
           {projects.map(p => (
             <PortfolioCard project={p} />
           ))}
