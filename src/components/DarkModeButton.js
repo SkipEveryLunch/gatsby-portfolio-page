@@ -3,9 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 const DarkModeButton = () => {
   const isBrowser = typeof document !== "undefined"
-  // const isInitiallyDark = isBrowser
-  //   ? (isInitiallyDark = document.documentElement.classList.contains("dark"))
-  //   : false
   let isInitiallyDark
   if (isBrowser) {
     isInitiallyDark = document.documentElement.classList.contains("dark")
@@ -27,7 +24,7 @@ const DarkModeButton = () => {
     }
   }
   return (
-    <div onClick={toggleIsDarkMode} className="flex items-center ">
+    <button onClick={toggleIsDarkMode} className="flex items-center ">
       <div className="flex items-center">
         <FontAwesomeIcon
           className={`mr-1 ${isDarkMode ? "text-gray-300" : "text-blue-400"}`}
@@ -49,7 +46,7 @@ const DarkModeButton = () => {
           icon={faMoon}
         />
       </div>
-    </div>
+    </button>
   )
 }
 export default DarkModeButton
