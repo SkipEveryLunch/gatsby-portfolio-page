@@ -10,7 +10,7 @@ const PortfolioCard = ({ project }) => {
       to={`/projects/${project.frontmatter.slug}`}
       key={project.frontmatter.id}
     >
-      <div className="w-1/2 sm:w-full">
+      <div className={`w-1/2 sm:w-full bg-gray-400`}>
         <GatsbyImage
           className="rounded-sm"
           image={getImage(
