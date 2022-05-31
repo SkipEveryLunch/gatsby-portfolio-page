@@ -3,7 +3,7 @@ title: Learn with you
 stack: Vue,TypeScript,tailwind,laravel,Docker,Docker-compose,nginx,EB,RDS,Route53,github action
 slug: learn-with-you
 date: 2021-01-01T00:00:00+00:00
-url: http://learn-with-you.com
+url: https://learn-with-you.com
 thumb: ../images/thumbs/lwu.png
 featuredImg: ../images/featured/lwu-banner.png
 ---
