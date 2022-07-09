@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Ribbon from "./Ribbon"
-import Tag from "../components/Tag"
+import Tag from "./Tag"
+import useWidth from "../hooks/useWidth"
 const PortfolioCard = ({ project }) => {
   const stacks = project.frontmatter.stack.split(",")
   const THRESHHOLD = 640
-  const [width, setWidth] = useState(window.innerWidth)
-  const updateWidth = event => {
-    setWidth(window.innerWidth)
-  }
-
-  useEffect(() => {
-    window.addEventListener(`resize`, updateWidth, {
-      capture: false,
-      passive: true,
-    })
-  })
+  const width = useWidth()
   return (
     <Link
       className="my-5 sm:my-0 portfolioDetail flex sm:flex-col"
@@ -44,9 +35,9 @@ const PortfolioCard = ({ project }) => {
       </div>
       <div className="mx-5 mt-2 w-1/2 sm:w-full">
         {width < THRESHHOLD ? (
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-2">
             {project.frontmatter.title.split("/").map(el => {
-              return <p className="text-xl font-boldd">{el}</p>
+              return <p className="text-2xl font-boldd">{el}</p>
             })}
           </div>
         ) : (
