@@ -11,7 +11,7 @@ const ProjectDetails = ({ data }) => {
   return (
     <Layout>
       <SectionWrapper>
-        <HeadingForDetail title={title} stack={stack} />
+        <HeadingForDetail title={title.replace(/\//g, "")} stack={stack} />
         <div className="flex justify-center text-left">
           <div>
             <GatsbyImage

@@ -1,5 +1,5 @@
 ---
-title: Learn with you
+title: 学習の集大成！/英単語帳を自作できる/ポートフォリオアプリ
 stack: Vue,TypeScript,tailwind,laravel,Docker,Docker-compose,nginx,EB,RDS,Route53,github action
 slug: learn-with-you
 date: 2021-01-01T00:00:00+00:00

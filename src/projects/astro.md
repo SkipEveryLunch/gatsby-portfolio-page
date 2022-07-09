@@ -1,5 +1,5 @@
 ---
-title: 最先端技術！軽量フレームワークAstroに挑戦
+title: 最先端技術！/軽量フレームワーク/Astroに挑戦
 stack: Astro,Figma,Netlify
 slug: astro-figma-lp
 date: 2021-01-01T00:00:00+00:00

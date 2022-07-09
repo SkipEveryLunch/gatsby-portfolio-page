@@ -1,5 +1,5 @@
 ---
-title: すべての始まり。React+Node.jsでWeb開発
+title: すべての始まり。/React+Node.jsで/Web開発
 stack: Node.js, React, PostgreSQL,Heroku
 slug: smart-face-app
 date: 2021-01-01T00:00:00+00:00

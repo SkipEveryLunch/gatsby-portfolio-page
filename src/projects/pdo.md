@@ -1,5 +1,5 @@
 ---
-title: Laravelなし! PDOでシンプルなAPI
+title: Laravelなし！/PDOでシンプルなAPI
 stack: PHP,Heroku, React
 slug: pdo-todo-list
 date: 2021-01-01T00:00:00+00:00
