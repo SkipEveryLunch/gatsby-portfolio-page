@@ -12,17 +12,16 @@ const PortfolioCard = ({ project }) => {
     >
       <div className={`w-1/2 sm:w-full bg-gray-400`}>
         <GatsbyImage
-          className="rounded-sm"
+          className="rounded-sm mt-2"
           image={getImage(
             project.frontmatter.thumb.childImageSharp.gatsbyImageData
           )}
           alt="Banner"
         />
       </div>
-
-      <div className="sm:text-center mx-5 w-1/2 sm:w-full">
-        <h3 className="text-xl sm:text-2xl">{project.frontmatter.title}</h3>
-        <div className="mt-2">
+      <div className="mx-5 mt-2 w-1/2 sm:w-full">
+        <h3>{project.frontmatter.title}</h3>
+        <div>
           {stacks.map(s => (
             <Tag>{s}</Tag>
           ))}

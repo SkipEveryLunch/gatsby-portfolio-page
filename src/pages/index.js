@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import Button from "../components/Button"
-import SectionWrapper from "../components/SectionWrapper"
 
 const Index = () => {
   const [isVisible, setIsvisible] = useState(false)

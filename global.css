@@ -45,6 +45,10 @@ body {
 .text-large {
   @apply text-xl sm:text-2xl;
 }
+.text-very-small {
+  font-size: 0.65rem;
+  line-height: 0.75rem;
+}
 input,
 textarea {
   @apply dark:text-gray-700;

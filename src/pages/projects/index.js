@@ -7,7 +7,7 @@ const Projects = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes
   return (
     <Layout>
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-10">
         <Heading
           title="Portfolios"
           describe="今までに作ったWebアプリとWebサイトです。"
