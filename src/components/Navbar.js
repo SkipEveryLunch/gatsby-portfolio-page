@@ -10,7 +10,7 @@ const navs = [
 const Navbar = () => {
   const location = useLocation()
   return (
-    <nav className="flex gap-3.5 justify-center mx-4 border-b border-gray-300">
+    <nav className="flex gap-3 lg:gap-5 justify-center mx-4 mt-2 border-b border-gray-300 dark:border-gray-500">
       {navs.map((nav, idx) => {
         return (
           <NavLink

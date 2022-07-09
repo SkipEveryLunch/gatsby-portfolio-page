@@ -13,8 +13,9 @@ const Index = () => {
   })
   return (
     <Layout>
-      <SectionWrapper>
-        <div>
+      {/* <SectionWrapper> */}
+      <div className="grid place-items-center h-full">
+        <div className="flex flex-col">
           <div className="mb-5 text-very-large">
             <h2>Welcome.</h2>
             <h2>I've got some portfolios</h2>
@@ -47,11 +48,12 @@ const Index = () => {
               。
             </p>
           </div>
+          <Link to="/projects">
+            <Button>見てみる</Button>
+          </Link>
         </div>
-        <Link to="/projects">
-          <Button>見てみる</Button>
-        </Link>
-      </SectionWrapper>
+      </div>
+      {/* </SectionWrapper> */}
     </Layout>
   )
 }
