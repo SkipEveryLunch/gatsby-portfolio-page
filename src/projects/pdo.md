@@ -6,6 +6,7 @@ date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/PDO.png
 url: https://pdo-todo-spa.herokuapp.com/login
 featuredImg: ../images/featured/PDO.png
+importance: 4
 ---
 
 説明：Udemy の下記の講座で作った todo リストの API に、

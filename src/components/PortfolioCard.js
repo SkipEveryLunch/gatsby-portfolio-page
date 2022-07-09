@@ -1,16 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Ribbon from "./Ribbon"
 import Tag from "../components/Tag"
 const PortfolioCard = ({ project }) => {
   const stacks = project.frontmatter.stack.split(",")
   return (
     <Link
-      className="my-5 sm:my-0 portfolioDetail flex items-center sm:flex-col"
+      className="my-5 sm:my-0 portfolioDetail flex sm:flex-col"
       to={`/projects/${project.frontmatter.slug}`}
       key={project.frontmatter.id}
     >
-      <div className={`w-1/2 sm:w-full bg-gray-400`}>
+      <div className="w-1/2 sm:w-full relative">
+        {project.frontmatter.importance === 1 ? <Ribbon /> : ""}
         <GatsbyImage
           className="rounded-sm mt-2"
           image={getImage(

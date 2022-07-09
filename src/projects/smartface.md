@@ -6,6 +6,7 @@ date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/SmartFace.png
 url: https://smart-brain-view-frontend.herokuapp.com/
 featuredImg: ../images/featured/SmartFace.png
+importance: 3
 ---
 
 React でフロント、Node.js+Express でバックエンドを構築し、Heroku にデプロイしたアプリです。

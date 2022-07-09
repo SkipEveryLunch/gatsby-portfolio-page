@@ -6,6 +6,7 @@ date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/WebRTC.png
 url: https://webrtc-react-firebase-3d2d6.web.app
 featuredImg: ../images/featured/WebRTC.png
+importance: 2
 ---
 
 説明：Udemy の下記の講座で作ったシンプルなビデオチャットアプリ。

@@ -53,3 +53,16 @@ input,
 textarea {
   @apply dark:text-gray-700;
 }
+.ribbon {
+  @apply bg-red-400 text-xs py-2 pl-2 pr-5;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  text-align: center;
+  font-size: 18px; /*文字サイズ*/
+  color: #fff; /*文字色*/
+  box-sizing: border-box;
+  clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}

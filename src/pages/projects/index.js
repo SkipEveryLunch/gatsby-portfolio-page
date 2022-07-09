@@ -28,13 +28,14 @@ export const query = graphql`
     file {
       id
     }
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(sort: { fields: frontmatter___importance, order: ASC }) {
       nodes {
         frontmatter {
           date
           slug
           stack
           title
+          importance
           thumb {
             childImageSharp {
               gatsbyImageData(

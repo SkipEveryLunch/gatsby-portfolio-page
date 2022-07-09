@@ -6,6 +6,7 @@ date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/astro.png
 url: https://statuesque-haupia-d79347.netlify.app/
 featuredImg: ../images/featured/astro.png
+importance: 2
 ---
 
 話題のフレームワーク、Astro を用いて作った LP です。

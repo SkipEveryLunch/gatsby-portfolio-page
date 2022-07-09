@@ -6,6 +6,7 @@ date: 2021-01-01T00:00:00+00:00
 url: https://learn-with-you.com
 thumb: ../images/thumbs/lwu.png
 featuredImg: ../images/featured/lwu-banner.png
+importance: 1
 ---
 
 **サーバー料金削減のため、このアプリは現在 9:00 ～ 22:30 のみ稼働しております。**
