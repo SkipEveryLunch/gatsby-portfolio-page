@@ -32,15 +32,18 @@ const PortfolioCard = ({ project }) => {
         ) : null}
       </div>
       <div className="mx-5 sm:mx-0 mt-2 w-1/2 sm:w-full">
-        {width < THRESHHOLD ? (
-          <div className="flex flex-col mb-2">
-            {project.frontmatter.title.split("/").map(el => {
-              return <p className="text-2xl font-boldd">{el}</p>
-            })}
-          </div>
-        ) : (
-          ""
-        )}
+        <div>
+          {width < THRESHHOLD ? (
+            <div className="flex flex-col mb-2">
+              {project.frontmatter.title.split("/").map(el => {
+                return <p className="text-2xl font-boldd">{el}</p>
+              })}
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+
         <div class="flex flex-row flex-wrap gap-1">
           {stacks.map(s => (
             <Tag>{s}</Tag>

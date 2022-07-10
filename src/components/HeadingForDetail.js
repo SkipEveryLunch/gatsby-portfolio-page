@@ -6,7 +6,7 @@ const HeadingForDetail = ({ title, stack }) => {
     <div className="text-center mb-2">
       <h2 className="text-4xl mb-3">{title}</h2>
       <div className="flex justify-center">
-        <div className="stacks w-1/2">
+        <div className="flex flex-row flex-wrap gap-1">
           {stacks.map(s => (
             <Tag>{s}</Tag>
           ))}
