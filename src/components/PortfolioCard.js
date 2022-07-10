@@ -43,7 +43,7 @@ const PortfolioCard = ({ project }) => {
         ) : (
           ""
         )}
-        <div>
+        <div class="flex">
           {stacks.map(s => (
             <Tag>{s}</Tag>
           ))}
