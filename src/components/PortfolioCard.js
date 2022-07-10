@@ -29,11 +29,9 @@ const PortfolioCard = ({ project }) => {
               return <p className="pf-title">{el}</p>
             })}
           </div>
-        ) : (
-          ""
-        )}
+        ) : null}
       </div>
-      <div className="mx-5 mt-2 w-1/2 sm:w-full">
+      <div className="mx-5 sm:mx-0 mt-2 w-1/2 sm:w-full">
         {width < THRESHHOLD ? (
           <div className="flex flex-col mb-2">
             {project.frontmatter.title.split("/").map(el => {
@@ -43,7 +41,7 @@ const PortfolioCard = ({ project }) => {
         ) : (
           ""
         )}
-        <div class="flex">
+        <div class="flex flex-row flex-wrap gap-1">
           {stacks.map(s => (
             <Tag>{s}</Tag>
           ))}
